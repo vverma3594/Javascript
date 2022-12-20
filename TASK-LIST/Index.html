@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stop Watch</title>
+    <title>Task List</title>
 
     <link
       rel="stylesheet"
@@ -17,27 +17,32 @@
   <body>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container">
-        <span class="navbar-brand mb-0 h1">StopWatch</span>
+        <span class="navbar-brand mb-0 h1">Task List</span>
       </div>
     </nav>
     <section>
       <div class="container mt-5 ">
-       <div class="row text-center">
+       <div class="row">
         <div class="col-6">
             <div class="card">
-              <div class="card-header"><h2><b>JS Stopwatch</b></h2></div>
+              <div class="card-header"><h2><b>Task List</b></h2></div>
               <div class="card-body">
-                <h1>
-                  <span id="min">00</span> : 
-                  <span id="sec">00</span> : 
-                  <span id="milisec">00</span>  
-                </h1>
-                <button class="btn btn-primary" id="startBtn">Start</button>
-                <button class="btn btn-warning" id="stopBtn">Stop</button>
-                <button class="btn btn-danger" id="resetBtn">Reset</button>
+                <form id="formTask">
+                  <div class="mb-3">
+                    <label class="form-label">Add the task</label>
+                    <input type="text" class="form-control" id="InputTask">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
               </div>
             </div>
         </div>
+       </div>
+
+       <div class="card mt-5 p-3">
+          <ul id="listItem">
+       
+          </ul>
        </div>
       </div>
     </section>
