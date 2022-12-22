@@ -26,23 +26,24 @@
        <div class="row">
         <div class="col-12">
             <div class="card">
-              <div class="card-header"><h2><b>To-do list</b></h2></div>
-              <div class="card-body">
+              <div class="card-header bg-success text-white"><h2><b>To-do list</b></h2></div>
+              <div class="card-body bg-light">
                 <form id="formTask">
                   <div class="mb-3">
-                    <label class="form-label">Add the task</label>
                     <input type="text" class="form-control" id="InputTask">
                     <input type="hidden"  id="saveTask">
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" id="add" class="btn btn-primary">Add the task</button>
                   </form>
+                  <button id="update" class="btn btn-primary">Update the task</button>
+
               </div>
             </div>
         </div>
         
        </div>
 
-       <div class="card mt-5 p-3">
+       <div class="card mt-5 p-3 bg-secondary text-white">
           <ul id="listItem">
 
           </ul>
