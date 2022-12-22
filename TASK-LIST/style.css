@@ -1,0 +1,10 @@
+#listItem{
+    margin-bottom: 0;
+    list-style: auto;
+}
+#listItem li{
+    text-transform: capitalize;
+}
+#listItem li span{
+    float: right;
+}
